@@ -1,0 +1,60 @@
+header {
+	background: url("band4.png");
+	background-size: cover;
+	padding: 15px 25px 5px 25px;
+}
+body {
+	background-color: #000000;	
+	text-align: center;
+}
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+	font-family: 'Rock Salt', cursive;
+	font-size: 40px;
+	/*font-family:"Arial Black", Gadget, sans-serif;*/
+}
+
+p {
+	font-family: Helvetica;
+	color: #FFFFFF;
+}
+
+a {
+	color: #FF0000;
+	text-decoration: none;
+}
+ul {
+	color: #FFFFFF;
+	/*font-family: Helvetica;*/
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: left;
+	padding-left: 500px;
+
+}
+img {
+	text-align: center;
+}
+
+hr {
+	width: 500px;
+}
+
+#slogan {
+	font-style: italic;
+	font-size: 22px;
+	color: #FF1111;
+}
+
+#contact {
+	text-align: center;
+	font-weight: bold;
+}
+#tour {
+	color: #FF1111;
+	text-align: left;
+	padding-left: 450px;
+}
