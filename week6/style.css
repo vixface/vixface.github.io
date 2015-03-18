@@ -1,0 +1,315 @@
+body {
+	font-family: helvetica;
+	/*background-color: #00aa22;*/
+	/*background-color: #F8BA07;*/
+	margin: 20px 60px;
+}
+
+header {
+	font-family: 'Paytone One', sans-serif;
+	background-image: url("lights1.jpg");
+	height: 138px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #ffffff;
+	padding: 30px;
+	/*color: #280200;*/
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+h2, h3 {
+  font-family: 'Paytone One', sans-serif;
+  font-weight: bold;
+}
+
+nav {
+	float: left;
+	padding: 20px 30px;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	/*display: inline;*/
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	/*#A10C0B;*/
+	/*6D0516;*/
+}
+a:hover, a:active {
+    color: #FFA300;
+}
+
+footer {
+	text-align: center;
+  padding: 5px;
+	background-color: #7E0C0E;
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#7E0C0E));
+  background:-moz-linear-gradient(#f04349, #7E0C0E);
+  background:-o-linear-gradient(#f04349, #7E0C0E);
+  background:linear-gradient(#f04349, #7E0C0E);
+  clear: both;
+}
+
+/*video{
+	border: 40px;
+
+}*/
+#video1_container {
+  width: 80%;
+	margin: 50px auto;
+	background-image: url("cinema4.jpg");
+ 	background-size: cover;
+ 	/*background-size: 1096px 481px;*/
+ 	background-position: center; center;
+ 	text-align: center;
+ 	color: white;
+}
+
+#video1{
+ 	/*width: 650px;*/
+  width: 80%;
+float: right;
+  letter-spacing: 1em;
+}
+
+#tvscreen {
+		/*width: 400px;
+  		height: 350px;*/
+/*		-webkit-shape-inside: ellipse(0, 0, 20%, 100%);
+		background-color: #ff0000;*/
+		background-image: url('television-outline-hi.png');
+		background-repeat: none;
+		background-size: 400px 350px;
+}
+
+
+.videotext{
+	text-align: justify;
+  margin-top: 1em;
+}
+
+
+#video2, #video3, #video4 {
+  display: inline-block;
+	max-width: 400px;
+
+}
+
+#tvvideos { 
+	text-align: center;
+	margin-top: 50px;
+  padding: 4%;
+ }
+ 
+#video2 { float: left; }
+#video3 { display: inline-block; }
+#video4 { float: right; }
+
+
+/*#tvvideo {
+	position: relative;
+  	margin: 40px 0 0 0;
+
+}
+*/
+
+
+#tv {
+  position: relative;
+/*  width: 200px;
+  height: 150px;*/
+  width: 400px;
+  height: 300px;
+  margin: 20px 0;
+  background: rgba(0,0,0,0);
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+
+
+/* ============================================================================================================================
+== BUBBLE WITH AN OBTUSE TRIANGLE
+** ============================================================================================================================ */
+
+/* THE SPEECH BUBBLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.triangle-obtuse {
+  position:relative;
+  padding:15px;
+  margin:1em 0 3em;
+  color:#fff;
+  background:#7E0C0E;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#7E0C0E));
+  background:-moz-linear-gradient(#f04349, #7E0C0E);
+  background:-o-linear-gradient(#f04349, #7E0C0E);
+  background:linear-gradient(#f04349, #7E0C0E);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+/* Variant : for top positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.top {
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#7E0C0E));
+  background:-moz-linear-gradient(#7E0C0E, #f04349);
+  background:-o-linear-gradient(#7E0C0E, #f04349);
+  background:linear-gradient(#7E0C0E, #f04349);
+}
+
+/* Variant : for left positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.left {
+  margin-left:50px;
+  background:#7E0C0E;
+}
+
+/* Variant : for right positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.right {
+  margin-right:50px;
+  background:#7E0C0E;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+/* creates the wider right-angled triangle */
+.triangle-obtuse:before {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:60px; /* controls horizontal position */
+  border:0;
+  border-right-width:30px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-style:solid;
+  border-color:transparent #7E0C0E;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the narrower right-angled triangle */
+.triangle-obtuse:after {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:80px; /* value = (:before's left) + (:before's border-right/left-width)  - (:after's border-right/left-width) */
+  border:0;
+  border-right-width:10px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :before */
+  border-style:solid;
+  border-color:transparent #fff;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+.triangle-obtuse.top:before {
+  top:-20px; /* value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:60px; /* controls horizontal position */
+  border:0;
+  border-left-width:30px; /* vary this value to change the width of the triangle */
+  border-top-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-color:transparent #7E0C0E;
+}
+
+.triangle-obtuse.top:after {
+  top:-20px; /* value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:80px; /* value = (:before's right) + (:before's border-right/left-width)  - (:after's border-right/left-width) */
+  border-width:0;
+  border-left-width:10px; /* vary this value to change the width of the triangle */
+  border-top-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :before */
+  border-color:transparent #fff;
+}
+
+/* Variant : left
+------------------------------------------ */
+
+.triangle-obtuse.left:before {
+  top:15px; /* controls vertical position */
+  bottom:auto;
+  left:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:30px; /* vary this value to change the height of the triangle */
+  border-left-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :after */
+  border-color:#7E0C0E transparent;
+}
+
+.triangle-obtuse.left:after {
+  top:35px; /* value = (:before's top) + (:before's border-top/bottom-width)  - (:after's border-top/bottom-width) */
+  bottom:auto;
+  left:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:10px; /* vary this value to change the height of the triangle */
+  border-left-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :before */
+  border-color:#fff transparent;
+}
+
+/* Variant : right
+------------------------------------------ */
+
+.triangle-obtuse.right:before {
+  top:15px; /* controls vertical position */
+  bottom:auto;
+  left:auto;
+  right:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:30px; /* vary this value to change the height of the triangle */
+  border-right-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :after */
+  border-color:#7E0C0E transparent;
+}
+
+.triangle-obtuse.right:after {
+  top:35px; /* value = (:before's top) + (:before's border-top/bottom-width)  - (:after's border-top/bottom-width) */
+  bottom:auto;
+  right:-50px; /* value = - border-left-width - border-right-width */
+  left:auto;
+  border:0;
+  border-bottom-width:10px; /* vary this value to change the height of the triangle */
+  border-right-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :before */
+  border-color:#fff transparent;
+}
