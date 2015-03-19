@@ -1,7 +1,5 @@
 body {
 	font-family: helvetica;
-	/*background-color: #00aa22;*/
-	/*background-color: #F8BA07;*/
 	margin: 20px 60px;
 }
 
@@ -13,15 +11,15 @@ header {
 	background-position: right top;
 	background-color: #ffffff;
 	padding: 30px;
-	/*color: #280200;*/
+
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
 }
 h2 {
-  font-size: 24px;
+  font-size: 32px;
 }
 h3 {
   font-size: 18px;
@@ -33,7 +31,6 @@ h2, h3 {
 
 nav {
 	float: left;
-	padding: 20px 30px;
 	font-weight: bold;
 }
 
@@ -42,16 +39,14 @@ ul {
 }
 
 li {
-	/*display: inline;*/
 	padding: 10px;
 }
 
 a {
 	text-decoration: none;
 	color: #ffffff;
-	/*#A10C0B;*/
-	/*6D0516;*/
 }
+
 a:hover, a:active {
     color: #FFA300;
 }
@@ -67,13 +62,12 @@ footer {
   clear: both;
 }
 
-/*video{
-	border: 40px;
 
-}*/
 #video1_container {
-  width: 80%;
-	margin: 50px auto;
+  /*width: 80%;*/
+	/*margin: 50px auto;*/
+  margin-left: 160px;
+  margin-right: 50px;
 	background-image: url("cinema4.jpg");
  	background-size: cover;
  	/*background-size: 1096px 481px;*/
@@ -84,43 +78,63 @@ footer {
 
 #video1{
  	/*width: 650px;*/
-  width: 80%;
-float: right;
-  letter-spacing: 1em;
-}
 
-#tvscreen {
-		/*width: 400px;
-  		height: 350px;*/
-/*		-webkit-shape-inside: ellipse(0, 0, 20%, 100%);
-		background-color: #ff0000;*/
-		background-image: url('television-outline-hi.png');
-		background-repeat: none;
-		background-size: 400px 350px;
+  /*width: 80%;*/
+/*float: right;*/
+  letter-spacing: 1em;
 }
 
 
 .videotext{
 	text-align: justify;
   margin-top: 1em;
+  line-height: 1.5em;
 }
 
 
 #video2, #video3, #video4 {
   display: inline-block;
-	max-width: 400px;
+  vertical-align: top;
+	width: 400px;
+  margin: 1em;
+
+  float: left;
+  width: 340px;
+  height: 300px;
+  padding: 15px;
+  margin: 0;
 
 }
 
 #tvvideos { 
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 30px;
   padding: 4%;
  }
- 
-#video2 { float: left; }
+
+/*instead of .column*/
+/*#video2 { float: left; }
 #video3 { display: inline-block; }
-#video4 { float: right; }
+#video4 { float: right; }*/
+
+/*.column {
+  float: left;
+  width: 260px;
+  height: 300px;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+}
+*/
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 
 
 /*#tvvideo {
@@ -129,6 +143,17 @@ float: right;
 
 }
 */
+
+#tvscreen {
+    /*width: 400px;
+      height: 350px;*/
+/*    -webkit-shape-inside: ellipse(0, 0, 20%, 100%);
+    background-color: #ff0000;*/
+    background-image: url('television-outline-hi.png');
+    background-repeat: none;
+    background-size: 400px 350px;
+}
+
 
 
 #tv {
