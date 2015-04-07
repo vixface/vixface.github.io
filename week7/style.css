@@ -1,0 +1,12 @@
+body {
+	font-family: helvetica;
+	margin: 20px 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+}
