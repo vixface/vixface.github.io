@@ -1,0 +1,279 @@
+header {
+/*	background: url("band_j.png");
+	background-size: cover;
+	background-position: center center;
+	padding: 15px 25px 5px 25px;*/
+
+}
+body {
+	background-color: #000000;	
+	margin: 20px 60px;
+
+}
+h1 {
+	color: #FFFFFF;
+	/*text-align: center;*/
+	/*font-family: 'Rock Salt', cursive;
+	font-size: 40px;*/
+}
+
+h2 {
+	color: #FF0000;
+	font-family: arial;
+}
+
+p {
+	font-family: Helvetica;
+	/*line-height: 18px;*/
+	color: #FFFFFF;
+}
+
+
+nav {
+	margin:0, auto;
+	font-weight: bold;
+		
+}
+
+
+a {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #777777;
+}
+
+
+ul {
+	/*color: #FFFFFF;*/
+	/*font-family: Helvetica;*/
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	list-style-type: none;
+	/*text-align: left;*/
+	/*padding-left: 500px;*/
+
+}
+
+nav ul {
+	display: inline;
+}
+
+/*img {
+	text-align: center;
+}*/
+
+hr {
+	width: 500px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: left;
+	/*height: 80px;*/
+/*  	padding: 5px;*/
+background-color: #222222;
+padding: 5px;
+margin: 0;
+clear: both;
+
+}
+
+#square {
+	width: 300px;
+	height: 300px;
+	background: blue;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.fullpage{
+	height:100vh;
+	overflow:auto;
+}
+
+#slogan {
+	font-style: italic;
+	font-size: 22px;
+	color: #FF1111;
+	/*text-align: center;*/
+	margin: 20px 0;
+}
+
+#gigs {
+	background-color: #FFFFFF;
+	color: #000000;
+	width: 30%;
+	height:14em;
+	padding: 5px 10px;
+
+}
+
+#soundembed {
+	/*float: right;*/
+	padding: 10px;
+		/*position: absolute; right: 0; bottom: 0;*/
+}
+
+#twitdiv {
+	width: 350px;
+	margin: 10px: 
+	/*float:right;
+	position: right: 0; bottom: 0;*/
+
+}
+
+#rightbar {
+	float: right;
+}
+
+#news {
+	width: 50%;
+	height: 16em;
+	padding: 5px 10px;
+	margin: 20px 0;
+	/*margin-top: 10p*/x;
+	outline: 2px solid #FFFFFF;
+}
+
+#socmedia {
+	float: left;
+	background-color: #222222;
+	margin: 0;
+	width: 100%;
+}
+
+#contact {
+	clear: both;
+}
+
+
+// Smaller menu when on small screen
+// All padding and margin are in em, so they will scale as well
+@media (min-width : 900px) {
+  .menu {
+    font-size: 1.2em;
+  }
+}
+
+.menu {
+  padding: 0.5em;
+  background: #eee;
+  min-height: 2em;
+  line-height: 1em;
+
+  ul {
+    transition: max-height .25s linear;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  li {
+    // visibility transition is on li because multiple transition selectors is not well supported
+    transition: visibility .25s linear;
+    display: inline-block;
+    border: 1px solid;
+    padding: .45em 1.1em;
+    margin: 0 .3em;
+  }
+}
+
+@media (max-width : 650px) {
+  .menu {
+    ul {
+      max-height: 0;
+      overflow: hidden;
+      margin: 0 3.5em 0 1em;
+    }
+
+    li {
+      visibility: hidden;
+      display: block;
+      padding: 0.5em 0.6em;
+      border: none;
+    }
+
+    .navbar-handle {
+      display: block;
+    }
+  }
+  
+  #navbar-checkbox:checked + .menu {
+    ul {
+      max-height: 300px;
+    }
+    
+    li {
+      visibility: visible;
+    }
+    .navbar-handle {
+      &, &:after, &:before {
+        border-color: #aaa;
+      }
+    }
+  }
+}
+
+.navbar-checkbox {
+    display: none;
+}
+
+.navbar-handle {
+    @height: 45px; // just a reference to compute em values on the fly
+    display: none;
+    cursor: pointer;
+    position: relative;
+    font-size: @height;
+    padding: .5em 0;
+    height: 0;
+    width: 1em * 75px / @height;
+    border-top: (1em * 6px / @height) solid;
+
+    &:before, &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: ' ';
+        border-top: (1em * 6px / @height) solid;
+    }
+
+    &:before {
+        top: 1em * 17px / @height;
+    }
+
+    &:after {
+        top: 1em * 40px / @height;
+    }
+}
+
+
+
+///////////
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  .navbar-handle {
+    position: absolute;
+    font-size: 1.2em;
+    top: 0.7em;
+    right: 12px;
+    z-index: 10;    
+  }
+}
