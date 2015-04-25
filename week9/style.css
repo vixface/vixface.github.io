@@ -65,6 +65,7 @@ padding: 1%;
 
 nav a {
   color: #ffffff;
+
 }
 
 button {
@@ -211,6 +212,10 @@ footer {
     width: 100%;
     }
 
+
+    nav a {
+      width: 100%;
+    }
  #main-nav{
   display: none;
   }
@@ -218,6 +223,8 @@ footer {
   #mobile-nav{
   display: block;
   position: fixed;
+
+  width: 100%;
   /*margin: 0,auto;*/
   }
 
@@ -230,7 +237,7 @@ footer {
   label{
     font-family: 'Rock Salt', cursive;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 2em;
   }
 
   #menu{
@@ -259,7 +266,9 @@ footer {
 
   nav a {
   color: #ff0000;
+  width: 100%;
   }
+
 
 
  #main-nav{
@@ -269,6 +278,7 @@ footer {
   #mobile-nav{
     display: block;
     position: fixed;
+    
     }
 
   #menu-toggle{
@@ -278,7 +288,8 @@ footer {
   label{
     font-family: 'Rock Salt', cursive;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.5em;
+
   }
 
   #menu{
