@@ -207,7 +207,7 @@ footer {
     display: block;
     color: #ff0000;
     background-color: rgba(0,0,0,1);
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
     width: 100%;
     }
 
@@ -278,7 +278,7 @@ footer {
   label{
     font-family: 'Rock Salt', cursive;
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #menu{
