@@ -45,6 +45,7 @@ ul {
   font-family: Tahoma, sans-serif;
   font-weight: bold;
   list-style-type: none;
+  text-align: center;
 
 }
 
@@ -66,6 +67,10 @@ nav a {
   color: #ffffff;
 }
 
+button {
+  padding: 0.5em;
+}
+
 footer {
   /*background-color: #777777;
   height: 6em;
@@ -73,6 +78,17 @@ footer {
   position:relative;
     top:50%;
     transform: translateY(50%);*/
+}
+
+
+.info {
+  background-color: #3F7CAC;
+  color: #ffffff;
+}
+
+.tickets {
+  background-color: #9B1D20;
+  color: #ffffff;
 }
 
 #textwrapper {
@@ -176,7 +192,7 @@ footer {
 }
 
 #main-nav{
-  display: block;
+  display: inline;
 }
 
 /* id that holds the mobile nav */
@@ -184,26 +200,126 @@ footer {
   display: none;
 }
 
+
+@media only screen and (max-width: 1150px)  {
+
+  nav li{
+    display: block;
+    color: #ff0000;
+    background-color: rgba(0,0,0,1);
+    padding-bottom: 0.5em;
+    width: 100%;
+    }
+
+ #main-nav{
+  display: none;
+  }
+
+  #mobile-nav{
+  display: block;
+  position: fixed;
+  /*margin: 0,auto;*/
+  }
+
+ 
+
+  #menu-toggle{
+  display: none;
+  }
+
+  label{
+    font-family: 'Rock Salt', cursive;
+    color: #FFFFFF;
+    font-size: 40px;
+  }
+
+  #menu{
+   display: none;
+  }
+
 #menu-toggle:checked + #menu {
   display: block;
+  width:100%;
+  /*text-align: center;*/
+
+  }
+
+
+
+
 }
 
 
-// Smaller menu when on small screen
-// All padding and margin are in em, so they will scale as well
-@media (min-width : 650px) {
+@media only screen and (max-width: 650px)  {
 
+  nav li{
+      display: block;
+      background-color: rgba(0,0,0,1);
+    }
 
-
-#main-nav{
-    display: none !important;
+  nav a {
+  color: #ff0000;
   }
+
+
+ #main-nav{
+  display: none;
+}
+
   #mobile-nav{
     display: block;
     position: fixed;
-    bottom:0;
+    }
+
+  #menu-toggle{
+    display: none;
   }
-  label {
+
+  label{
+    font-family: 'Rock Salt', cursive;
+    color: #FFFFFF;
+    font-size: 25px;
+  }
+
+  #menu{
+    display: none;
+  }
+
+#menu-toggle:checked + #menu {
+  display: block;
+  width:100%;
+  text-align: center;
+
+  
+}
+
+
+
+/* id that holds the mobile nav */
+/*#mobile-nav{
+  display: block;
+}*/
+
+  /*#mhls {
+    font-family: 'Rock Salt', cursive;
+    color: #FFFFFF;
+    font-size: 20px;
+  }*/
+ 
+}
+
+
+
+
+
+/*#menu-toggle:checked + #menu {
+  display: block;
+}*/
+
+
+
+
+ /* label {
     display: block;
       cursor: pointer;
       text-align: center;
@@ -226,6 +342,7 @@ footer {
     top:-170px;
     background-color: #000;
   }
+}*/
 
 /*  .menu {
     font-size: 1.2em;
@@ -254,7 +371,12 @@ footer {
   }
 }
 */
-@media (max-width : 650px) {
+
+
+
+
+/*-------------------------- other version */
+/*@media (max-width : 650px) {
   .menu {
     ul {
       max-height: 0;
@@ -342,4 +464,4 @@ footer {
     z-index: 10;    
   }
 }
-
+*/
