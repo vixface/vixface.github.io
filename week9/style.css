@@ -73,12 +73,17 @@ button {
 }
 
 footer {
-  /*background-color: #777777;
-  height: 6em;
+  background-color: #000000;
+  /*height: 6em;*/
   
   position:relative;
-    top:50%;
-    transform: translateY(50%);*/
+  bottom: -10%;
+  /*top:90%;*/
+  transform: translateY(-55%);
+}
+
+#footertext {
+  margin-left: 2%;
 }
 
 
@@ -181,13 +186,6 @@ footer {
   width: 100%;
 }
 
-/*#socmedia {
-  float: left;
-  background-color: #222222;
-  margin: 0;
-  width: 100%;
-}
-*/
 #contact {
   clear: both;
 }
@@ -223,14 +221,11 @@ footer {
   #mobile-nav{
   display: block;
   position: fixed;
-
   width: 100%;
   /*margin: 0,auto;*/
   }
 
- 
-
-  #menu-toggle{
+   #menu-toggle{
   display: none;
   }
 
@@ -250,7 +245,6 @@ footer {
   /*text-align: center;*/
 
   }
-
 
 
 
@@ -288,8 +282,7 @@ footer {
   label{
     font-family: 'Rock Salt', cursive;
     color: #FFFFFF;
-    font-size: 1.5em;
-
+    font-size: 1em;
   }
 
   #menu{
@@ -300,22 +293,15 @@ footer {
   display: block;
   width:100%;
   text-align: center;
+  }
 
-  
-}
+  #musictext {
+  width: 100%;
+  /*padding: 2%;
+  padding-bottom: 6em;
+  background-color: rgba(0,0,0, 0.5);*/
+  }
 
-
-
-/* id that holds the mobile nav */
-/*#mobile-nav{
-  display: block;
-}*/
-
-  /*#mhls {
-    font-family: 'Rock Salt', cursive;
-    color: #FFFFFF;
-    font-size: 20px;
-  }*/
  
 }
 
@@ -323,156 +309,6 @@ footer {
 
 
 
-/*#menu-toggle:checked + #menu {
-  display: block;
-}*/
 
 
 
-
- /* label {
-    display: block;
-      cursor: pointer;
-      text-align: center;
-    padding:1.2em 2em;
-    font-size:.8em;
-    text-transform: uppercase;
-    letter-spacing:.07em;
-  }
-  #menu-toggle{
-    display: none;
-  }
-  #menu{
-    display: none;
-  }
-  #menu-toggle:checked + #menu {
-    display:block;
-    width:100%;
-    text-align: center;
-    position: absolute;
-    top:-170px;
-    background-color: #000;
-  }
-}*/
-
-/*  .menu {
-    font-size: 1.2em;
-  }
-}
-
-.menu {
-  padding: 0.5em;
-  background: #eee;
-  min-height: 2em;
-  line-height: 1em;
-
-  ul {
-    transition: max-height .25s linear;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  li {
-    // visibility transition is on li because multiple transition selectors is not well supported
-    transition: visibility .25s linear;
-    display: inline-block;
-    border: 1px solid;
-    padding: .45em 1.1em;
-    margin: 0 .3em;
-  }
-}
-*/
-
-
-
-
-/*-------------------------- other version */
-/*@media (max-width : 650px) {
-  .menu {
-    ul {
-      max-height: 0;
-      overflow: hidden;
-      margin: 0 3.5em 0 1em;
-    }
-
-    li {
-      visibility: hidden;
-      display: block;
-      padding: 0.5em 0.6em;
-      border: none;
-    }
-
-    .navbar-handle {
-      display: block;
-    }
-  }
-  
-  #navbar-checkbox:checked + .menu {
-    ul {
-      max-height: 300px; // Set this to the maximum height your menu will ever have.
-    }
-    
-    li {
-      visibility: visible;
-    }
-    .navbar-handle {
-      &, &:after, &:before {
-        border-color: #aaa;
-      }
-    }
-  }
-}
-
-.navbar-checkbox {
-    display: none;
-}
-
-// Will scale based on font-size
-// Appears as 3 parallel horizontal bars
-.navbar-handle {
-    @height: 45px; // just a reference to compute em values on the fly
-    display: none;
-    cursor: pointer;
-    position: relative;
-    font-size: @height;
-    padding: .5em 0;
-    height: 0;
-    width: 1em * 75px / @height;
-    border-top: (1em * 6px / @height) solid;
-
-    &:before, &:after {
-        position: absolute;
-        left: 0;
-        right: 0;
-        content: ' ';
-        border-top: (1em * 6px / @height) solid;
-    }
-
-    &:before {
-        top: 1em * 17px / @height;
-    }
-
-    &:after {
-        top: 1em * 40px / @height;
-    }
-}
-
-
-
-///////////
-
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-  .navbar-handle {
-    position: absolute;
-    font-size: 1.2em;
-    top: 0.7em;
-    right: 12px;
-    z-index: 10;    
-  }
-}
-*/
